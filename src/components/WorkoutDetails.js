@@ -7,7 +7,7 @@ const WorkoutDetails = ({pratimas}) => {
     const { user } = useAuthContext();
 
     const handleClick = async () => {
-        const response = await fetch('https://backend-75om.onrender.com/api/pratimai/' + pratimas._id, {
+        const response = await fetch('/api/pratimai/' + pratimas._id, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.token}`

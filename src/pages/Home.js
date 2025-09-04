@@ -12,7 +12,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchPratimus = async () => {
-            const response = await fetch('https://backend-75om.onrender.com/api/pratimai', {
+            const response = await fetch('/api/pratimai', {
                 headers: {'Authorization': `Bearer ${user.token}`}
             });
             const json = await response.json();

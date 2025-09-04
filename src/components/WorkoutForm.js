@@ -17,7 +17,7 @@ const WorkoutForm = () => {
         e.preventDefault();
 
         const pratimas = {title, load, reps};
-        const response = await fetch('https://backend-75om.onrender.com/api/pratimai', {
+        const response = await fetch('/api/pratimai', {
             method: 'POST',
             body: JSON.stringify(pratimas),
             headers: {
