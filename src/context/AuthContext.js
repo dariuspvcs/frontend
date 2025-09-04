@@ -23,7 +23,7 @@ export const AuthContextProvider = ({children}) => {
         const user = JSON.parse(localStorage.getItem('user'));
 
         if(user) {
-            fetch('https://backend-75om.onrender.com/api/user/auth', {
+            fetch('/api/user/auth', {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }
